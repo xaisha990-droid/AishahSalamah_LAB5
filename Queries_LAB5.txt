@@ -1,0 +1,95 @@
+?- consult('c:/Users/Aishah Salamah/OneDrive/Documents/AishahSalamah_LAB5.pl').
+true.
+
+% Father: Bart's father
+?- father(X, bart).
+X = homer.
+
+% Father: Homer's children
+?- father(homer, X).
+X = bart ;
+X = lisa ;
+X = maggie.
+
+% Mother: Bart's mother
+?- mother(X, bart).
+X = marge.
+
+% Mother: Marge's children
+?- mother(marge, X).
+X = bart ;
+X = lisa ;
+X = maggie.
+
+% Son: Is Bart Homer's son?
+?- son(bart, homer).
+true.
+
+% Son: Homer's sons
+?- son(X, homer).
+X = bart.
+
+% Daughter: Is Lisa Homer's daughter?
+?- daughter(lisa, homer).
+true.
+
+% Daughter: Homer's daughters
+?- daughter(X, homer).
+X = lisa ;
+X = maggie.
+
+% Brother: Is Bart Lisa's brother?
+?- brother(bart, lisa).
+true.
+
+% Brother: Is Herb Homer's brother?
+?- brother(herb, homer).
+true.
+
+% Sister: Is Lisa Bart's sister?
+?- sister(lisa, bart).
+true.
+
+% Sister: Is Patty Marge's sister?
+?- sister(patty, marge).
+true.
+
+% Grandfather: Is Abraham Bart's grandfather?
+?- grandfather(abraham, bart).
+true.
+
+% Grandfather: Is Clancy Lisa's grandfather?
+?- grandfather(clancy, lisa).
+true.
+
+% Aunt: Is Patty Bart's aunt?
+?- aunt(patty, bart).
+true.
+
+% Aunt: Is Selma Bart's aunt?
+?- aunt(selma, bart).
+true.
+
+% Uncle: Is Herb Bart's uncle?
+?- uncle(herb, bart).
+true.
+
+% Uncle: Is Homer Ling's uncle?
+?- uncle(homer, ling).
+false.
+
+% Cousin: Are Bart and Ling cousins?
+?- cousin(bart, ling).
+true.
+
+% Cousin: Are Lisa and Ling cousins?
+?- cousin(lisa, ling).
+true.
+
+% Ancestor: Is Abraham Bart's ancestor?
+?- ancestor(abraham, bart).
+true.
+
+% Ancestor: Is Abraham Maggie's ancestor?
+?- ancestor(abraham, maggie).
+true.
